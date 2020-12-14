@@ -1,0 +1,10 @@
+
+nohup.out
+test.png
+demo.py
+config.json
+
+pic/*
+waveshare_epd/__pycache__/*
+waveshare_epd/*.pyc
+__pycache__/*
