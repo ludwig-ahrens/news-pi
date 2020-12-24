@@ -70,7 +70,7 @@ try:
             epd.sleep()
             logging.info("Good night " + now.strftime("%Y-%m-%d %H:%M:%S"))
             cleared = True
-        time.sleep(300)
+        time.sleep(900)
 
 except IOError as e:
     logging.info("exception")

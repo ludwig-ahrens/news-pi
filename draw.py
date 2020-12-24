@@ -63,7 +63,7 @@ class Drawer:
         wochentag, today = self.datum.get_wochentag_datum()
         texts = [wochentag, today]
         fonts = [40, 25]
-        x_range, y_range = self.draw_texts(texts, fonts, colors=[BLACK, RED])
+        x_range, y_range = self.draw_texts(texts, fonts, colors=[BLACK, BLACK])
         return x_range[1], y_range[1]
 
     def weather(self):
@@ -85,10 +85,12 @@ class Drawer:
         texts = []
         fonts = []
         x_aligns = []
+        colors = []
         for t, d in zip(titles, descriptions):
             texts.extend([t, d])
-            fonts.extend([25, 20])
+            fonts.extend([25, 21])
             x_aligns.extend([1, 0])
+            colors.extend([RED, BLACK])
         self.draw_texts(
             texts,
             fonts,
@@ -96,6 +98,7 @@ class Drawer:
             x_aligns=x_aligns,
             y_range=(y, IMAGE_SIZE[1] - MARGIN_Y),
             spacing=10,
+            colors=colors,
         )
 
     def draw_icon(self, icon, pos, size, color=BLACK):
