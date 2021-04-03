@@ -8,7 +8,7 @@ wochentag = {
     2: "Mittwoch",
     3: "Donnestag",
     4: "Freitag",
-    5: "Sonnenabend",
+    5: "Sonnabend",
     6: "Sonntag",
 }
 monat = {
